@@ -1,0 +1,1 @@
+SELECT * FROM scope2.s2_factors

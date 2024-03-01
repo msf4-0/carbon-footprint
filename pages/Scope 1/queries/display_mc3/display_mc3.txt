@@ -1,0 +1,1 @@
+SELECT * FROM scope1.mobilecombustion WHERE source = '{{this.params.factor}}' AND range = '{{this.params.year}}'

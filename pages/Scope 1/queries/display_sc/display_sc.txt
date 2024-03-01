@@ -1,0 +1,1 @@
+SELECT * FROM scope1."stationarycombustion" WHERE year = {{this.params.year}}

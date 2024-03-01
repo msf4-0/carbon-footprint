@@ -1,0 +1,48 @@
+{
+  "unpublishedCollection": {
+    "name": "app",
+    "pageId": "Database",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [
+      {
+        "name": "expandContainer1",
+        "value": "false"
+      },
+      {
+        "name": "expandContainer2",
+        "value": "false"
+      },
+      {
+        "name": "expandContainer3",
+        "value": "false"
+      },
+      {
+        "name": "expandContainer4",
+        "value": "false"
+      },
+      {
+        "name": "expandContainer5",
+        "value": "false"
+      },
+      {
+        "name": "expandContainer6",
+        "value": "false"
+      },
+      {
+        "name": "expandContainer7",
+        "value": "false"
+      },
+      {
+        "name": "expandContainer8",
+        "value": "false"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "Database_app",
+  "deleted": false,
+  "gitSyncId": "65239c609e2c5d386003eff6_652e21cd4f6e207987bd5099"
+}

@@ -1,0 +1,13 @@
+INSERT into cms.fuel
+	(type, co2, unit, year, notes, created_by, role, reference )
+VALUES
+	(
+		'{{Input31.text}}',
+		'{{Input32.text}}',
+		'{{Input33.text}}',
+		'{{Input34.text}}',
+		'{{Input36.text}}',
+		'{{appsmith.store.user}}',
+		'{{appsmith.store.role}}',
+		'{{Input35.text}}'
+	);

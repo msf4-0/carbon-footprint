@@ -1,0 +1,16 @@
+INSERT into scope3.scope3_5_12
+	(material, unit, recycled, landfilled, combusted, composted, year, notes, created_by, reference, role)
+VALUES
+	(
+		'{{Input6Copy.text}}',
+		'{{Input7.text}}',
+		'{{Input8.text}}',
+		'{{Input9.text}}',
+		'{{Input10.text}}',
+		'{{Input11.text}}',
+		'{{Input13.text}}',
+		'{{Input15.text}}',
+		'{{appsmith.store.user}}',
+		'{{Input14.text}}',
+		'{{appsmith.store.role}}'
+	);

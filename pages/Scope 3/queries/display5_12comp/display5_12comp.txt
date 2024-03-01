@@ -1,0 +1,1 @@
+SELECT id, material, composted FROM scope3.scope3_5_12 WHERE year = '2023' AND composted IS NOT NULL;

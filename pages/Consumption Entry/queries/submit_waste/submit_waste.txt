@@ -1,0 +1,11 @@
+INSERT INTO cms.waste (categories, date, input, input_unit, output, output_unit, intensity, intensity_unit)
+VALUES (
+  '{{categories_waste.selectedOptionValue}}',
+  '{{date_waste.formattedDate}}',
+  '{{parseFloat(input_waste.text)}}',
+	'{{unit_waste.selectedOptionLabel}}',
+	'{{parseFloat(output_waste.text)}}',
+  '{{unit_outputwaste.selectedOptionLabel}}',
+  '{{parseFloat(intensity_waste.text)}}',
+	'{{unit_waste2.text}}'
+);

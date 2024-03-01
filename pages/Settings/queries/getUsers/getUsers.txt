@@ -1,0 +1,1 @@
+SELECT * from cms.users WHERE email = {{appsmith.store.user}}

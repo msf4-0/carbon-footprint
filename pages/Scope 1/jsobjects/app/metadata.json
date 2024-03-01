@@ -1,0 +1,60 @@
+{
+  "unpublishedCollection": {
+    "name": "app",
+    "pageId": "Scope 1",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [
+      {
+        "name": "visible_sc",
+        "value": "false"
+      },
+      {
+        "name": "visible_mc",
+        "value": "false"
+      },
+      {
+        "name": "visible_pe",
+        "value": "false"
+      },
+      {
+        "name": "visible_fe",
+        "value": "false"
+      },
+      {
+        "name": "visible_calc",
+        "value": "false"
+      },
+      {
+        "name": "visible_year",
+        "value": "false"
+      },
+      {
+        "name": "visible_efficiency",
+        "value": "false"
+      },
+      {
+        "name": "visible_dist",
+        "value": "false"
+      },
+      {
+        "name": "disable_save",
+        "value": "true"
+      },
+      {
+        "name": "import_s1",
+        "value": "true"
+      },
+      {
+        "name": "table_s1",
+        "value": "false"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "Scope 1_app",
+  "deleted": false,
+  "gitSyncId": "65de094d3a6f5f23a8f1784f_65de095c3a6f5f23a8f1793d"
+}

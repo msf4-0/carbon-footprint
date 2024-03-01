@@ -1,0 +1,1 @@
+SELECT * FROM scope3.scope3_1_2 WHERE year = '{{this.params.year}}'

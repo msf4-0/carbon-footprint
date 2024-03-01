@@ -1,0 +1,1 @@
+SELECT * FROM cms."calculations" WHERE scope = 'Scope 1' ORDER BY timestamp DESC LIMIT 10;

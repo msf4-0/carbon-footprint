@@ -1,0 +1,3 @@
+UPDATE cms.users
+SET password = '{{this.params.pHash}}'
+WHERE email = '{{appsmith.store.user}}';

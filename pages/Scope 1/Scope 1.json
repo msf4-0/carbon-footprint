@@ -1,0 +1,112 @@
+{
+  "unpublishedPage": {
+    "name": "Scope 1",
+    "slug": "scope-1",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 1760,
+          "containerStyle": "none",
+          "snapRows": 74,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 88,
+          "minHeight": 760,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Scope 1_app.run",
+              "name": "app.run",
+              "collectionId": "Scope 1_app",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  try {\n    jsonwebtoken.verify(appsmith.store.token, 'secret');\n  } catch (error) {\n    return showAlert('Session expired. Please re-login', 'warning').then(() => appsmith.mode === \"EDIT\" ? '' : navigateTo('Login Page'));\n  }\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Scope 1_displaycalc1",
+              "name": "displaycalc1",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Scope 1_gwp_select",
+              "name": "gwp_select",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Scope 1_app.visible",
+              "name": "app.visible",
+              "collectionId": "Scope 1_app",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "() => {\n  if (!Input2.text || Input3.text !== null) {\n    app.visible_efficiency = true;\n  } else {\n    app.visible_efficiency = false;\n  }\n  if (!Select7.selectedOptionLabel) {\n    app.visible_year = true;\n    app.visible_dist = true;\n  } else {\n    app.visible_year = false;\n    app.visible_dist = false;\n  }\n  if (Select1.selectedOptionValue === \"Stationary Combustion\" && !!year_select.selectedOptionValue) {\n    app.visible_sc = true;\n    app.visible_mc = false;\n    app.visible_pe = false;\n    app.visible_fe = false;\n    app.visible_calc = true;\n    value_calc.setText(\"\");\n  } else if (Select1.selectedOptionValue === \"Mobile Combustion\" && !!year_select.selectedOptionValue) {\n    app.visible_sc = false;\n    app.visible_mc = true;\n    app.visible_pe = false;\n    app.visible_fe = false;\n    app.visible_calc = true;\n    value_calc.setText(\"\");\n  } else if (Select1.selectedOptionValue === \"Process Emission\" && !!year_select.selectedOptionValue) {\n    app.visible_sc = false;\n    app.visible_mc = false;\n    app.visible_pe = true;\n    app.visible_fe = false;\n    app.visible_calc = true;\n    value_calc.setText(\"\");\n  } else if (Select1.selectedOptionValue === \"Fugitive Emission\" && !!year_select.selectedOptionValue) {\n    app.visible_sc = false;\n    app.visible_mc = false;\n    app.visible_pe = false;\n    app.visible_fe = true;\n    app.visible_calc = true;\n    value_calc.setText(\"\");\n  } else {\n    app.visible_sc = false;\n    app.visible_mc = false;\n    app.visible_pe = false;\n    app.visible_fe = false;\n    app.visible_calc = false;\n    value_calc.setText(\"\");\n  }\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Scope 1_conversion",
+              "name": "conversion",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "Table5.sortOrder.column || 'id'",
+                "Table5.sortOrder.order !== \"desc\" ? \"\" : \"DESC\""
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Scope 1_app.year",
+              "name": "app.year",
+              "collectionId": "Scope 1_app",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "() => {\n  if (Select1.selectedOptionLabel === \"Stationary Combustion\") {\n    app.dropdownData_sc();\n    insert.submit();\n  } else if (Select1.selectedOptionLabel === \"Mobile Combustion\") {\n    app.dropdown_fuel();\n    app.dropdown_type();\n  } else if (Select1.selectedOptionLabel === \"Process Emission\") {\n    app.dropdownData_pe();\n  } else if (Select1.selectedOptionLabel === \"Fugitive Emission\") {\n    app.dropdownData_fe();\n  } else {\n    showAlert('Please select a category for Scope 1', 'info');\n  }\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "Scope 1",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "65de094d3a6f5f23a8f1784f_65de09563a6f5f23a8f1792f"
+}

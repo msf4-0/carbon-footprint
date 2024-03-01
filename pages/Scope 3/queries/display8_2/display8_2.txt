@@ -1,0 +1,1 @@
+SELECT * FROM scope3.scope3_8 WHERE id = {{this.params.id}}

@@ -1,0 +1,1 @@
+SELECT * FROM cms.users WHERE email = '{{this.params.email}}';

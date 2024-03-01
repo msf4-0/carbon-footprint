@@ -1,0 +1,1 @@
+{"PageSize":"2","command":"CREATE_MESSAGE","Body":"Here\u0027s the verification code: {{this.params.code}}. Keep in mind that the code expires at {{this.params.deadline}}.","Fom":"+12512374816","TWILIO_ACCOUNT_SID":"AC38162e5ae3683b64bb77461cae7ba44c","To":"{{this.params.phone}}"}

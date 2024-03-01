@@ -1,0 +1,11 @@
+INSERT into scope1.process
+	(gas, value, year, notes, created_by, reference, role)
+VALUES
+	(
+		'{{Input20Copy.text}}',
+		'{{Input23Copy.text}}',
+		'{{Input24Copy.text}}',
+		'{{appsmith.store.user}}',
+		'{{Input27.text}}',
+		'{{appsmith.store.role}}'
+	);

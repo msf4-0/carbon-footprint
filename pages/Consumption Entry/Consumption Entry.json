@@ -1,0 +1,164 @@
+{
+  "unpublishedPage": {
+    "name": "Consumption Entry",
+    "slug": "consumption-entry",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 830,
+          "containerStyle": "none",
+          "snapRows": 55,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 88,
+          "minHeight": 570,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Consumption Entry_app.calculation_energy",
+              "name": "app.calculation_energy",
+              "collectionId": "Consumption Entry_app",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "() => {\n  let value1 = input_energy.text;\n  let value2 = output_energy.text;\n  if (!value1 || !value2 || value2 === 0) {\n    return \" \";\n  } else {\n    let intensity = value1 / value2;\n    return intensity.toFixed(2);\n  }\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Consumption Entry_Select_cms_energy1",
+              "name": "Select_cms_energy1",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "Table3.sortOrder.column || 'id'"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Consumption Entry_Select_cms_waste1",
+              "name": "Select_cms_waste1",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "Table3Copy.sortOrder.column || 'id'"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Consumption Entry_Total_record_cms_waste1",
+              "name": "Total_record_cms_waste1",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Consumption Entry_app.calculation_waste",
+              "name": "app.calculation_waste",
+              "collectionId": "Consumption Entry_app",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "() => {\n  let value1 = input_waste.text;\n  let value2 = output_waste.text;\n  let intensity = value1 / value2;\n  if (!value1 || !value2 || value2 === 0) {\n    return \"\";\n  } else {\n    return intensity.toFixed(2);\n  }\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Consumption Entry_app.disable",
+              "name": "app.disable",
+              "collectionId": "Consumption Entry_app",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "() => {\n  if (!energy_type.selectedOptionValue) {\n    return true;\n  } else {\n    return false;\n  }\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Consumption Entry_app.disable2",
+              "name": "app.disable2",
+              "collectionId": "Consumption Entry_app",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "() => {\n  if (!categories_waste.selectedOptionLabel) {\n    return true;\n  } else {\n    return false;\n  }\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Consumption Entry_app.unit",
+              "name": "app.unit",
+              "collectionId": "Consumption Entry_app",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  let energy = energy_type.selectedOptionValue;\n  if (energy === 1) {\n    return JSON.stringify([{\n      label: \"kWh\",\n      value: 1\n    }, {\n      label: \"MWh\",\n      value: 2\n    }, {\n      label: \"GWh\",\n      value: 3\n    }]);\n  } else {\n    return JSON.stringify([{\n      label: \"L\",\n      value: 1\n    }, {\n      label: \"m3\",\n      value: 2\n    }]);\n  }\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Consumption Entry_app.unit2",
+              "name": "app.unit2",
+              "collectionId": "Consumption Entry_app",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  let categories = categories_waste.selectedOptionValue;\n  if (categories === 'Radioactive Waste') {\n    return JSON.stringify([{\n      label: \"kg\",\n      value: 1\n    }, {\n      label: \"tonnes\",\n      value: 2\n    }, {\n      label: \"Bq\",\n      value: 3\n    }, {\n      label: \"Ci\",\n      value: 4\n    }]);\n  } else {\n    return JSON.stringify([{\n      label: \"kg\",\n      value: 1\n    }, {\n      label: \"tonnes\",\n      value: 2\n    }]);\n  }\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Consumption Entry_app.unit_energy",
+              "name": "app.unit_energy",
+              "collectionId": "Consumption Entry_app",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "() => {\n  let unit1 = unit_energy.selectedOptionLabel;\n  let unit2 = unit_outputenergy.selectedOptionLabel;\n  if (!unit_energy.selectedOptionValue || !unit_outputenergy.selectedOptionValue) {\n    let res = \"\";\n    return res;\n  } else {\n    let res = unit1 + \"/\" + unit2;\n    return res;\n  }\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Consumption Entry_app.unit_waste",
+              "name": "app.unit_waste",
+              "collectionId": "Consumption Entry_app",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "() => {\n  let unit1 = unit_waste.selectedOptionLabel;\n  let unit2 = unit_outputwaste.selectedOptionLabel;\n  if (!unit_waste.selectedOptionValue || !unit_outputwaste.selectedOptionValue) {\n    let res = \"\";\n    return res;\n  } else {\n    let res = unit1 + \"/\" + unit2;\n    return res;\n  }\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "Consumption Entry",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "65239c609e2c5d386003eff6_6544641622bcd9218f0cb5ff"
+}

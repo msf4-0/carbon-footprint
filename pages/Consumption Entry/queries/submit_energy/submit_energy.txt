@@ -1,0 +1,12 @@
+INSERT INTO cms.energy (type, date, input, input_unit, output, output_unit, intensity, intensity_unit)
+VALUES 
+(
+  '{{energy_type.selectedOptionLabel}}',
+  '{{date_energy.formattedDate}}',
+  '{{parseFloat(input_energy.text)}}',
+	'{{unit_energy.selectedOptionLabel}}',
+	'{{parseFloat(output_energy.text)}}',
+  '{{unit_outputenergy.selectedOptionLabel}}',
+  '{{parseFloat(intensity_energy.text)}}',
+	'{{unit_energy2.text}}'
+);

@@ -1,0 +1,11 @@
+INSERT INTO cms.waste (categories, date, input, input_unit, output, output_unit, intensity, intensity_unit)
+SELECT
+   categories,
+   date, 
+   input,
+   input_unit, 
+   output, 
+   output_unit,
+   intensity, 
+   intensity_unit
+   FROM json_populate_recordset(null::cms.waste, '{{this.params.modifiedData}}');

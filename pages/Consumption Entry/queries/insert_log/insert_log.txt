@@ -1,0 +1,2 @@
+INSERT INTO cms.recent_logs (timestamp, action, email)
+VALUES ({{this.params.formattedDate}}, {{this.params.action}}, {{this.params.user}})

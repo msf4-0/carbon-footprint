@@ -1,0 +1,13 @@
+INSERT into scope2.s2_factors 
+	(source, unit, co2e, year, notes, created_by, role, reference)
+VALUES
+	(
+		'{{source_input2.text}}',
+		'{{unit_input2.text}}',
+		'{{emission_factor2.text}}',
+		'{{Input1.text}}',
+		'{{notes_input2.text}}',
+		'{{appsmith.store.user}}',
+		'{{appsmith.store.role}}',
+		'{{ref_input2.text}}'
+	)

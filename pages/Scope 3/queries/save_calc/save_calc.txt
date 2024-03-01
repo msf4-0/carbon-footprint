@@ -1,0 +1,4 @@
+INSERT into cms.calculations 
+	(timestamp, year, scope, categories, value_kgCO2e)
+VALUES
+	({{this.params.formattedDate}}, {{this.params.formattedDate2}}, 'Scope 3', {{Select1.selectedOptionLabel}}, {{this.params.value}})

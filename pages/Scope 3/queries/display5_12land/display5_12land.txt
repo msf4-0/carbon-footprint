@@ -1,0 +1,1 @@
+SELECT id, material, landfilled FROM scope3.scope3_5_12 WHERE year = '2023' AND landfilled IS NOT NULL;

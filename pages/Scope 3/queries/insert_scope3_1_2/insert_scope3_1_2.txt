@@ -1,0 +1,13 @@
+INSERT into scope3.scope3_1_2
+	(source, unit, factor, year, notes, created_by, reference, role)
+VALUES
+	(
+		'{{Input20CopyCopy.text}}',
+		'{{Input29.text}}',
+		'{{Input23CopyCopy.text}}',
+		'{{Input24CopyCopy.text}}',
+		'{{Input25CopyCopy.text}}',
+		'{{appsmith.store.user}}',
+		'{{Input30.text}}',
+		'{{appsmith.store.role}}'
+	);

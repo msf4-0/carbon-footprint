@@ -1,0 +1,3 @@
+UPDATE cms.users
+SET firstname = {{firstname_input.text}}, lastname = {{lastname_input.text}}, email = {{email_input.text}}, contact_no = {{phone_input.dialCode + phone_input.text}}, countryCode = {{phone_input.dialCode}}
+WHERE email = '{{appsmith.store.user}}';

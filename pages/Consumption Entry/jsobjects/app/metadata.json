@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "app",
+    "pageId": "Consumption Entry",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Consumption Entry_app",
+  "deleted": false,
+  "gitSyncId": "65239c609e2c5d386003eff6_6544b23722bcd9218f0cb609"
+}

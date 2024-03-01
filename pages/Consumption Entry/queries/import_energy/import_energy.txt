@@ -1,0 +1,12 @@
+INSERT INTO cms.energy (type, date, input, input_unit, output, output_unit, intensity, intensity_unit)
+SELECT
+  type,
+  date,
+  input,
+  input_unit,
+  output,
+  output_unit,
+  intensity,
+  intensity_unit
+FROM jsonb_populate_recordset(null::cms.energy, '{{this.params.modifiedData}}'::jsonb)
+

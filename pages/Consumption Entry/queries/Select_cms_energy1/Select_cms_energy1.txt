@@ -1,0 +1,6 @@
+SELECT
+  *
+FROM
+  cms.energy
+ORDER BY
+  "{{Table3.sortOrder.column || 'id'}}" ASC

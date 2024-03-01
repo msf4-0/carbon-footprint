@@ -1,0 +1,2 @@
+INSERT INTO cms.users ("firstname", "lastname", "contact_no", "email", "password", "countrycode", "role")
+  VALUES ('{{this.params.firstname}}','{{this.params.lastname}}','{{this.params.contact_no}}','{{this.params.email}}','{{this.params.pHash}}', '{{this.params.countrycode}}', 'visitor');

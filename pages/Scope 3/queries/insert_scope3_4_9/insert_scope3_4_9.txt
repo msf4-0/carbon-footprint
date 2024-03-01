@@ -1,0 +1,17 @@
+INSERT into scope3.scope3_4_9
+	(source, unit, co2, ch4, n2o, co2e, range, notes, created_by, reference, role, gwp)
+VALUES
+	(
+		'{{Input20Copy.text}}',
+		'{{Input21Copy.text}}',
+		'{{Input26Copy.text}}',
+		'{{Input22Copy.text}}',
+		'{{Input23Copy.text}}',
+		'{{Input28Copy.text}}',
+		'{{Input24Copy.text}}',
+		'{{Input25Copy.text}}',
+		'{{appsmith.store.user}}',
+		'{{Input27Copy.text}}',
+		'{{appsmith.store.role}}',
+		'{{Select11.selectedOptionLabel}}'
+	);

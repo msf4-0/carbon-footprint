@@ -1,0 +1,22 @@
+INSERT into scope1.stationarycombustion
+	(source, unit_energy, co2_energy, ch4_energy, n2o_energy, co2e_energy, unit_mass, co2_mass, ch4_mass, n2o_mass, co2e_mass, year, notes, created_by, reference, role, gwp)
+VALUES
+	(
+		'{{Input6.text}}',
+		'{{Input7.text}}',
+		'{{Input8.text}}',
+		'{{Input9.text}}',
+		'{{Input10.text}}',
+		'{{Input11.text}}',
+		'{{Input12.text}}',
+		'{{Input16.text}}',
+		'{{Input17.text}}',
+		'{{Input18.text}}',
+		'{{Input19.text}}',
+		'{{Input13.text}}',
+		'{{Input15.text}}',
+		'{{appsmith.store.user}}',
+		'{{Input14.text}}',
+		'{{appsmith.store.role}}',
+		'{{Select10.selectedOptionLabel}}'
+	);

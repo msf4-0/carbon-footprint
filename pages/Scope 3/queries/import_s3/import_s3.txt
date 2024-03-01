@@ -1,0 +1,8 @@
+INSERT INTO cms.calculations (timestamp, year, scope, categories, value_kgco2e)
+SELECT
+  timestamp,
+  year,
+  scope,
+  categories,
+  value_kgco2e
+FROM jsonb_populate_recordset(null::cms.calculations, '{{this.params.modifiedData}}'::jsonb)

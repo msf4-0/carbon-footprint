@@ -1,0 +1,64 @@
+{
+    "isCompact": false,
+    "boxShadow": "none",
+    "mobileBottomRow": 5,
+    "widgetName": "MenuButton2",
+    "displayName": "Menu button",
+    "iconSVG": "/static/media/icon.631848e88e7a3db05f6015f22835e81b.svg",
+    "topRow": 8,
+    "bottomRow": 13,
+    "parentRowSpace": 10,
+    "type": "MENU_BUTTON_WIDGET",
+    "hideCard": false,
+    "mobileRightColumn": 63,
+    "animateLoading": true,
+    "parentColumnSpace": 13,
+    "dynamicTriggerPathList": [
+        {"key": "menuItems.menuItem2.onClick"},
+        {"key": "menuItems.menuItem1.onClick"}
+    ],
+    "leftColumn": 51,
+    "dynamicBindingPathList": [
+        {"key": "menuColor"},
+        {"key": "borderRadius"}
+    ],
+    "isDisabled": false,
+    "key": "ntnzee507c",
+    "isDeprecated": false,
+    "rightColumn": 63,
+    "menuVariant": "SECONDARY",
+    "widgetId": "s2ifge2zqn",
+    "menuItems": {
+        "menuItem1": {
+            "onClick": "{{showModal('Modal6');}}",
+            "widgetId": "",
+            "index": 0,
+            "label": "Fuel ",
+            "id": "menuItem1",
+            "isVisible": true,
+            "isDisabled": false
+        },
+        "menuItem2": {
+            "onClick": "{{insert.insert();}}",
+            "widgetId": "",
+            "index": 1,
+            "label": "Emission Factors",
+            "id": "menuItem2",
+            "isVisible": true,
+            "isDisabled": false
+        }
+    },
+    "isVisible": true,
+    "label": "Add Custom Factors",
+    "version": 1,
+    "parentId": "zz7yl4hl7f",
+    "tags": ["Buttons"],
+    "renderMode": "CANVAS",
+    "isLoading": false,
+    "mobileTopRow": 1,
+    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "mobileLeftColumn": 47,
+    "menuItemsSource": "STATIC",
+    "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+    "placement": "CENTER"
+}

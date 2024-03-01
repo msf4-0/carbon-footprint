@@ -1,0 +1,6 @@
+SELECT
+  *
+FROM
+  cms.waste
+ORDER BY
+  "{{Table3Copy.sortOrder.column || 'id'}}" ASC

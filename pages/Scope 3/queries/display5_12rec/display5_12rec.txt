@@ -1,0 +1,1 @@
+SELECT id, material, recycled FROM scope3.scope3_5_12 WHERE year = '2023' AND recycled IS NOT NULL;

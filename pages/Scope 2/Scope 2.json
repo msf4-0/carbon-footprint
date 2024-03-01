@@ -1,0 +1,91 @@
+{
+  "unpublishedPage": {
+    "name": "Scope 2",
+    "slug": "scope-2",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 850,
+          "containerStyle": "none",
+          "snapRows": 54,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 88,
+          "minHeight": 560,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Scope 2_app.run",
+              "name": "app.run",
+              "collectionId": "Scope 2_app",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  try {\n    jsonwebtoken.verify(appsmith.store.token, 'secret');\n  } catch (error) {\n    return showAlert('Session expired. Please re-login', 'warning').then(() => appsmith.mode === \"EDIT\" ? '' : navigateTo('Login Page'));\n  }\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Scope 2_displaycalc2",
+              "name": "displaycalc2",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Scope 2_app.visible",
+              "name": "app.visible",
+              "collectionId": "Scope 2_app",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "() => {\n  if (!Select1.selectedOptionValue || !year_select.selectedOptionValue) {\n    app.visible_data = false;\n    app.dropdownData();\n    showAlert('Please select a category for Scope 2', 'info');\n  } else {\n    app.visible_data = true;\n    app.dropdownData();\n  }\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Scope 2_conversion",
+              "name": "conversion",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "Table5.sortOrder.column || 'id'",
+                "Table5.sortOrder.order !== \"desc\" ? \"\" : \"DESC\""
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "Scope 2",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "65de094d3a6f5f23a8f1784f_65de98c30b3d847cf544784d"
+}

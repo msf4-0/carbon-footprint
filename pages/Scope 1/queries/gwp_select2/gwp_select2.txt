@@ -1,0 +1,6 @@
+SELECT
+  *
+FROM
+  cms.gwp
+WHERE 
+	id = {{this.params.id}}

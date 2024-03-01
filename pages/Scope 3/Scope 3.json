@@ -1,0 +1,112 @@
+{
+  "unpublishedPage": {
+    "name": "Scope 3",
+    "slug": "scope-3",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 2350,
+          "containerStyle": "none",
+          "snapRows": 74,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 88,
+          "minHeight": 760,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Scope 3_app.run",
+              "name": "app.run",
+              "collectionId": "Scope 3_app",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  try {\n    jsonwebtoken.verify(appsmith.store.token, 'secret');\n  } catch (error) {\n    return showAlert('Session expired. Please re-login', 'warning').then(() => appsmith.mode === \"EDIT\" ? '' : navigateTo('Login Page'));\n  }\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Scope 3_displaycalc3",
+              "name": "displaycalc3",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Scope 3_app.visible",
+              "name": "app.visible",
+              "collectionId": "Scope 3_app",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "() => {\n  if (!Input2.text || Input3.text !== null) {\n    app.visible_efficiency = true;\n  } else {\n    app.visible_efficiency = false;\n  }\n  if (!Select7.selectedOptionLabel) {\n    app.visible_year = true;\n    app.visible_dist = true;\n  } else {\n    app.visible_year = false;\n    app.visible_dist = false;\n  }\n  if (!Input2Copy.text || Input3Copy.text !== null) {\n    app.visible_efficiency2 = true;\n  } else {\n    app.visible_efficiency2 = false;\n  }\n  if (!Select7Copy.selectedOptionLabel) {\n    app.visible_year2 = true;\n    app.visible_dist2 = true;\n  } else {\n    app.visible_year2 = false;\n    app.visible_dist2 = false;\n  }\n  if (Select1.selectedOptionValue === 5 || Select1.selectedOptionValue === 12) {\n    value_calc.setText(\"\");\n    app.visible_1 = true;\n    app.visible_calc = true;\n    app.visible_2 = false;\n    app.visible_3 = false;\n    app.visible_4 = false;\n    app.visible_5 = false;\n    app.visible_6 = false;\n  } else if (Select1.selectedOptionValue === 6 || Select1.selectedOptionValue === 7) {\n    value_calc.setText(\"\");\n    app.visible_1 = false;\n    app.visible_calc = true;\n    app.visible_2 = true;\n    app.visible_3 = false;\n    app.visible_4 = false;\n    app.visible_5 = false;\n    app.visible_6 = false;\n  } else if (Select1.selectedOptionValue === 4 || Select1.selectedOptionValue === 9) {\n    value_calc.setText(\"\");\n    app.visible_1 = false;\n    app.visible_calc = true;\n    app.visible_2 = false;\n    app.visible_3 = true;\n    app.visible_4 = false;\n    app.visible_5 = false;\n    app.visible_6 = false;\n  } else if (Select1.selectedOptionValue === 1 || Select1.selectedOptionValue === 2) {\n    value_calc.setText(\"\");\n    app.visible_1 = false;\n    app.visible_calc = true;\n    app.visible_2 = false;\n    app.visible_3 = false;\n    app.visible_4 = true;\n    app.visible_5 = false;\n    app.visible_6 = false;\n  } else if (Select1.selectedOptionValue === 3) {\n    value_calc.setText(\"\");\n    app.visible_1 = false;\n    app.visible_calc = true;\n    app.visible_2 = false;\n    app.visible_3 = false;\n    app.visible_4 = false;\n    app.visible_5 = true;\n    app.visible_6 = false;\n  } else if (Select1.selectedOptionValue === 8 || Select1.selectedOptionValue === 10 || Select1.selectedOptionValue === 11 || Select1.selectedOptionValue === 13 || Select1.selectedOptionValue === 14 || Select1.selectedOptionValue === 15) {\n    value_calc.setText(\"\");\n    app.visible_1 = false;\n    app.visible_calc = true;\n    app.visible_2 = false;\n    app.visible_3 = false;\n    app.visible_4 = false;\n    app.visible_5 = false;\n    app.visible_6 = true;\n  } else {\n    resetWidget('Container3', true);\n    app.visible_1 = false;\n    app.visible_calc = false;\n    app.visible_2 = false;\n    app.visible_3 = false;\n    app.visible_4 = false;\n    app.visible_5 = false;\n    app.visible_6 = false;\n  }\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Scope 3_gwp_select",
+              "name": "gwp_select",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Scope 3_conversion",
+              "name": "conversion",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "Table5.sortOrder.column || 'id'",
+                "Table5.sortOrder.order !== \"desc\" ? \"\" : \"DESC\""
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Scope 3_app.year",
+              "name": "app.year",
+              "collectionId": "Scope 3_app",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "() => {\n  if (Select1.selectedOptionValue === 5 || Select1.selectedOptionValue === 12) {\n    app1.dropdownData_5_12();\n  } else if (Select1.selectedOptionValue === 6 || Select1.selectedOptionValue === 7) {\n    app2.dropdown_fuel();\n    app2.dropdown_type();\n  } else if (Select1.selectedOptionValue === 4 || Select1.selectedOptionValue === 9) {\n    app3.dropdown_fuel();\n    app3.dropdown_type();\n  } else if (Select1.selectedOptionValue === 1 || Select1.selectedOptionValue === 2) {\n    app4.dropdownData();\n  } else if (Select1.selectedOptionValue === 3) {\n    app5.dropdownData();\n  } else if (Select1.selectedOptionValue === 8 || Select1.selectedOptionValue === 10 || Select1.selectedOptionValue === 11 || Select1.selectedOptionValue === 13 || Select1.selectedOptionValue === 14 || Select1.selectedOptionValue === 15) {\n    app6.select_dropdown();\n  } else {\n    showAlert('Please select a category for Scope 3', 'info');\n  }\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "Scope 3",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "65de094d3a6f5f23a8f1784f_65de0a853a6f5f23a8f179fc"
+}
