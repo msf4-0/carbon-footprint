@@ -63,10 +63,10 @@
   },
   "unpublishedCustomJSLibs": [
     {
-      "uidString": "jsonwebtoken_/libraries/jsonwebtoken@8.5.1.js"
+      "uidString": "xmlParser_https://cdnjs.cloudflare.com/ajax/libs/fast-xml-parser/3.17.5/parser.min.js"
     },
     {
-      "uidString": "xmlParser_https://cdnjs.cloudflare.com/ajax/libs/fast-xml-parser/3.17.5/parser.min.js"
+      "uidString": "jsonwebtoken_/libraries/jsonwebtoken@8.5.1.js"
     },
     {
       "uidString": "dcodeIO_https://cdn.jsdelivr.net/npm/bcryptjs@2.4.3/dist/bcrypt.min.js"
