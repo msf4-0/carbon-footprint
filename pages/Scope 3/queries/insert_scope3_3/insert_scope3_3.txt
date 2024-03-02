@@ -1,0 +1,18 @@
+INSERT into scope3.scope3_3
+	(type, fuel, unit, co2, ch4, n2o, co2e, year, notes, created_by, reference, role, gwp)
+VALUES
+	(
+		'{{Select12.selectedOptionLabel}}',
+		'{{Input37.text}}',
+		'{{Input38.text}}',
+		'{{Input39.text}}',
+		'{{Input40.text}}',
+		'{{Input41.text}}',
+		'{{Input42.text}}',
+		'{{Input43.text}}',
+		'{{Input44.text}}',
+		'{{appsmith.store.user}}',
+		'{{Input45.text}}',
+		'{{appsmith.store.role}}',
+		'{{Select13.selectedOptionLabel}}'
+	);

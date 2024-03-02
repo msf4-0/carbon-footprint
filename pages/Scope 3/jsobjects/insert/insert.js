@@ -18,6 +18,10 @@ export default {
 		{
 			showModal('Modal5')
 		}
+		else if (Select1.selectedOptionValue === 3)
+		{
+			showModal('Modal7')
+		}
 		else 
 		{
 			showAlert('Please select a Scope 3 category to proceed', 'error')
@@ -57,6 +61,24 @@ export default {
 		else 
 			{
 				Input28Copy.setValue("");
+			}
+	},
+
+	emission4: async () => {
+		const co2 = Input39.text;
+		const ch4 = Input40.text;
+		const n2o = Input41.text;
+		
+		if (!co2 && !ch4 && !n2o)
+			{
+				let id = Select13.selectedOptionValue;
+				const gwp = await gwp_select2.run({id})
+				const co2e = ((co2 * gwp[0].co2) + (ch4 * gwp[0].ch4) + (n2o * gwp[0].n2o))
+				return co2e;				
+			}
+		else 
+			{
+				Input42.setValue("");
 			}
 	},
 	

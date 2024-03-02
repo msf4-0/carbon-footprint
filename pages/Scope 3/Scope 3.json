@@ -28,6 +28,16 @@
         "layoutOnLoadActions": [
           [
             {
+              "id": "Scope 3_displaycalc3",
+              "name": "displaycalc3",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
               "id": "Scope 3_app.run",
               "name": "app.run",
               "collectionId": "Scope 3_app",
@@ -38,16 +48,6 @@
               ],
               "timeoutInMillisecond": 10000
             },
-            {
-              "id": "Scope 3_displaycalc3",
-              "name": "displaycalc3",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
             {
               "id": "Scope 3_app.visible",
               "name": "app.visible",
@@ -77,6 +77,17 @@
               "jsonPathKeys": [
                 "Table5.sortOrder.column || 'id'",
                 "Table5.sortOrder.order !== \"desc\" ? \"\" : \"DESC\""
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Scope 3_insert.emission4",
+              "name": "insert.emission4",
+              "collectionId": "Scope 3_insert",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  const co2 = Input39.text;\n  const ch4 = Input40.text;\n  const n2o = Input41.text;\n  if (!co2 && !ch4 && !n2o) {\n    let id = Select13.selectedOptionValue;\n    const gwp = await gwp_select2.run({\n      id\n    });\n    const co2e = co2 * gwp[0].co2 + ch4 * gwp[0].ch4 + n2o * gwp[0].n2o;\n    return co2e;\n  } else {\n    Input42.setValue(\"\");\n  }\n}"
               ],
               "timeoutInMillisecond": 10000
             }
