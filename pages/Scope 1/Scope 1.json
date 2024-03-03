@@ -28,17 +28,6 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Scope 1_app.run",
-              "name": "app.run",
-              "collectionId": "Scope 1_app",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "async () => {\n  try {\n    jsonwebtoken.verify(appsmith.store.token, 'secret');\n  } catch (error) {\n    return showAlert('Session expired. Please re-login', 'warning').then(() => appsmith.mode === \"EDIT\" ? '' : navigateTo('Login Page'));\n  }\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
               "id": "Scope 1_displaycalc1",
               "name": "displaycalc1",
               "confirmBeforeExecute": false,
@@ -56,6 +45,17 @@
             }
           ],
           [
+            {
+              "id": "Scope 1_app.run",
+              "name": "app.run",
+              "collectionId": "Scope 1_app",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  try {\n    jsonwebtoken.verify(appsmith.store.token, 'secret');\n  } catch (error) {\n    return showAlert('Session expired. Please re-login', 'warning').then(() => appsmith.mode === \"EDIT\" ? '' : navigateTo('Login Page'));\n  }\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            },
             {
               "id": "Scope 1_app.visible",
               "name": "app.visible",

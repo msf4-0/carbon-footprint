@@ -14,6 +14,7 @@
     ],
     "topRow": 30,
     "bottomRow": 34,
+    "tooltip": "Need at least energy or mass data to enable",
     "type": "BUTTON_WIDGET",
     "hideCard": false,
     "mobileRightColumn": 62,
