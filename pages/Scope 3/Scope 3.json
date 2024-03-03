@@ -28,6 +28,16 @@
         "layoutOnLoadActions": [
           [
             {
+              "id": "Scope 3_displaycalc3",
+              "name": "displaycalc3",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
               "id": "Scope 3_app.run",
               "name": "app.run",
               "collectionId": "Scope 3_app",
@@ -38,16 +48,6 @@
               ],
               "timeoutInMillisecond": 10000
             },
-            {
-              "id": "Scope 3_displaycalc3",
-              "name": "displaycalc3",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
             {
               "id": "Scope 3_app.visible",
               "name": "app.visible",

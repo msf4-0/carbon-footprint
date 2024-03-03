@@ -3,14 +3,14 @@
     "widgetName": "email_si",
     "iconSVG": "/static/media/icon.f2c34197dbcf03595098986de898928f.svg",
     "displayName": "Input",
-    "topRow": 9,
+    "topRow": 10,
     "searchTags": [
         "form",
         "text input",
         "number",
         "textarea"
     ],
-    "bottomRow": 16,
+    "bottomRow": 17,
     "parentRowSpace": 10,
     "labelWidth": 5,
     "autoFocus": false,
