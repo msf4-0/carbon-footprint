@@ -23,13 +23,20 @@ export default {
 		let fuel = Input2.text
 		let dist = Input3.text
 		
+		const factor = Select7.selectedOptionValue;
+		const year = Select8.selectedOptionValue;
+		await display_mc3.run({factor, year});	
+
+		let gwp = display_mc3.data[0].gwp
+		await gwp_select3.run({gwp})
+		
 		let match1 = Text13.text.match(/\d+\.\d+/);
 		let match2 = Text12.text.match(/\d+\.\d+/);
 		let match3 = Text14.text.match(/\d+\.\d+/);
 		
 		if (match1 && match2 && match3)
 			{
-				let answer = fuel * match1 + dist * match2 * 25 + dist * match3 * 298
+				let answer = fuel * match1 + dist * match2 * gwp_select3.data[0].ch4 + dist * match3 * gwp_select3.data[0].n2o
 				answer = answer.toFixed(2);
 				Select3.setSelectedOption({ label: "kg CO2e", value: "2" })
 				value_calc.setText(answer.toString())

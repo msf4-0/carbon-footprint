@@ -37,7 +37,7 @@ export default {
 		let id = Select10.selectedOptionValue;
 		const gwp = await gwp_select2.run({id})
 		const co2e = ((co2 * gwp[0].co2) + (ch4 * gwp[0].ch4) + (n2o * gwp[0].n2o))
-		return co2e;
+		return co2e;				
 	},
 
 	emission2_energy: async () => {
@@ -48,7 +48,7 @@ export default {
 		let id = Select10.selectedOptionValue;
 		const gwp = await gwp_select2.run({id})
 		const co2e = ((co2 * gwp[0].co2) + (ch4 * gwp[0].ch4) + (n2o * gwp[0].n2o))
-		return co2e;
+		return co2e;	
 	},
 	
 	choose:() => {

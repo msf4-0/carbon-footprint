@@ -113,6 +113,10 @@ export default { // For category 6 and 7
 		const factor = Select7.selectedOptionValue;
 		const year = Select8.selectedOptionValue;
 		await display6_7_3.run({factor, year});
+		
+		let gwp = display6_7_3.data[0].gwp
+		await gwp_select3.run({gwp})
+		
 		if (Checkbox1.isChecked === true)
 			{
 				let fuel = Input2.text
@@ -123,7 +127,7 @@ export default { // For category 6 and 7
 				
 				if (co2 && ch4 && n2o)
 					{
-						let answer = fuel * co2 + dist * ch4 * 25 + dist * n2o * 298
+						let answer = fuel * co2 + dist * ch4 * gwp_select3.data[0].ch4 + dist * n2o * gwp_select3.data[0].n2o
 						answer = answer.toFixed(2);
 						Select3.setSelectedOption({ label: "kg CO2e", value: "2" })
 						value_calc.setText(answer.toString())

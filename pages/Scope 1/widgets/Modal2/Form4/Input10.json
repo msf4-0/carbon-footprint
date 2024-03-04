@@ -15,7 +15,7 @@
         {"key": "isVisible"}
     ],
     "labelStyle": "",
-    "inputType": "TEXT",
+    "inputType": "NUMBER",
     "isDisabled": false,
     "isRequired": "{{Switch1.isSwitchedOn}}",
     "dynamicHeight": "FIXED",
@@ -68,6 +68,7 @@
     "originalTopRow": 13,
     "mobileLeftColumn": 14,
     "maxDynamicHeight": 9000,
+    "shouldAllowAutofill": false,
     "iconAlign": "left",
     "defaultText": "",
     "minDynamicHeight": 4

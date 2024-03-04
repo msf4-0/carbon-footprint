@@ -1,0 +1,6 @@
+SELECT
+  *
+FROM
+  cms.gwp
+WHERE
+	gwp = '{{this.params.gwp}}'

@@ -121,6 +121,13 @@ export default { // For category 4 and 9
 		let fuel = Input2Copy.text
 		let dist = Input3Copy.text
 		let weight = Input6.text
+
+		const factor = Select7Copy.selectedOptionValue;
+		const year = Select8Copy.selectedOptionValue;
+		await display4_9_3.run({factor, year});
+
+		let gwp = display4_9_3.data[0].gwp
+		await gwp_select3.run({gwp})
 		
 		let match1 = Text13Copy.text.match(/\d+\.\d+/);
 		let match2 = Text12Copy.text.match(/\d+\.\d+/);
@@ -130,7 +137,7 @@ export default { // For category 4 and 9
 			{
 				if (match1 && match2 && match3)
 					{
-						let answer = (fuel * match1 + dist * match2 * 25 + dist * match3 * 298) * weight
+						let answer = (fuel * match1 + dist * match2 * gwp_select3.data[0].ch4 + dist * match3 * gwp_select3.data[0].n2o) * weight
 						answer = answer.toFixed(2);
 						Select3.setSelectedOption({ label: "kg CO2e", value: "2" })
 						value_calc.setText(answer.toString())
@@ -147,7 +154,7 @@ export default { // For category 4 and 9
 			{
 				if (match1 && match2 && match3)
 					{
-						let answer = fuel * match1 + dist * match2 * 25 + dist * match3 * 298
+						let answer = fuel * match1 + dist * match2 * gwp_select3.data[0].ch4 + dist * match3 * gwp_select3.data[0].n2o
 						answer = answer.toFixed(2);
 						Select3.setSelectedOption({ label: "kg CO2e", value: "2" })
 						value_calc.setText(answer.toString())
@@ -164,7 +171,7 @@ export default { // For category 4 and 9
 			{
 				if (match1 && match2 && match3)
 					{
-						let answer = (match1 + dist * match2 * 25 + dist * match3 * 298) * weight
+						let answer = (match1 + dist * match2 * gwp_select3.data[0].ch4 + dist * match3 * gwp_select3.data[0].n2o) * weight
 						answer = answer.toFixed(2);
 						Select3.setSelectedOption({ label: "kg CO2e", value: "2" })
 						value_calc.setText(answer.toString())
@@ -181,7 +188,7 @@ export default { // For category 4 and 9
 			{
 				if (match1 && match2 && match3)
 					{
-						let answer = match1 + dist * match2 * 25 + dist * match3 * 298
+						let answer = match1 + dist * match2 * gwp_select3.data[0].ch4 + dist * match3 * gwp_select3.data[0].n2o
 						answer = answer.toFixed(2);
 						Select3.setSelectedOption({ label: "kg CO2e", value: "2" })
 						value_calc.setText(answer.toString())
