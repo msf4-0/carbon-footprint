@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "65239c609e2c5d386003eff6_652e54194f6e207987bd50c5",
+  "id": "Settings_app",
   "unpublishedCollection": {
     "name": "app",
     "pageId": "Settings",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Settings_app",
-  "deleted": false,
-  "gitSyncId": "65239c609e2c5d386003eff6_652e54194f6e207987bd50c5"
+    "variables": []
+  }
 }

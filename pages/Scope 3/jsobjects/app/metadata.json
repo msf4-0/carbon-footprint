@@ -1,11 +1,11 @@
 {
+  "gitSyncId": "65de094d3a6f5f23a8f1784f_65de0a8b3a6f5f23a8f17a1c",
+  "id": "Scope 3_app",
   "unpublishedCollection": {
     "name": "app",
     "pageId": "Scope 3",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
     "variables": [
       {
         "name": "visible_1",
@@ -71,10 +71,6 @@
         "name": "table_s1",
         "value": "false"
       }
-    ],
-    "userPermissions": []
-  },
-  "id": "Scope 3_app",
-  "deleted": false,
-  "gitSyncId": "65de094d3a6f5f23a8f1784f_65de0a8b3a6f5f23a8f17a1c"
+    ]
+  }
 }

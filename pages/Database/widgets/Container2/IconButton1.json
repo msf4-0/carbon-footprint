@@ -1,50 +1,66 @@
 {
-    "boxShadow": "none",
-    "mobileBottomRow": 4,
-    "widgetName": "IconButton1",
-    "onClick": "{{app.expandContainer1 = app.expandContainer1 ? false : true}}",
-    "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "dynamicPropertyPathList": [
-        {"key": "onClick"},
-        {"key": "iconName"}
-    ],
-    "displayName": "Icon button",
-    "iconSVG": "/static/media/icon.b08054586989b185a0801e9a34f8ad49.svg",
-    "searchTags": [
-        "click",
-        "submit"
-    ],
-    "topRow": 0,
-    "bottomRow": 4,
-    "parentRowSpace": 10,
-    "type": "ICON_BUTTON_WIDGET",
-    "hideCard": false,
-    "mobileRightColumn": 63,
-    "animateLoading": true,
-    "parentColumnSpace": 13.796875,
-    "dynamicTriggerPathList": [{"key": "onClick"}],
-    "leftColumn": 59,
-    "dynamicBindingPathList": [
-        {"key": "buttonColor"},
-        {"key": "borderRadius"},
-        {"key": "iconName"}
-    ],
-    "isDisabled": false,
-    "key": "mabt9qz3gq",
-    "isDeprecated": false,
-    "rightColumn": 63,
-    "iconName": "{{app.expandContainer1? 'chevron-up' : 'chevron-down'}}",
-    "widgetId": "vj5c7fwmpc",
-    "minWidth": 50,
-    "isVisible": true,
-    "version": 1,
-    "parentId": "7p2ic7vhtn",
-    "tags": ["Buttons"],
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "mobileTopRow": 0,
-    "responsiveBehavior": "hug",
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "mobileLeftColumn": 59,
-    "buttonVariant": "TERTIARY"
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 4,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "TERTIARY",
+  "displayName": "Icon button",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "iconName"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    },
+    {
+      "key": "iconName"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "hideCard": false,
+  "iconName": "{{app.expandContainer1? 'chevron-up' : 'chevron-down'}}",
+  "iconSVG": "/static/media/icon.b08054586989b185a0801e9a34f8ad49.svg",
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "mabt9qz3gq",
+  "leftColumn": 59,
+  "minWidth": 50,
+  "mobileBottomRow": 4,
+  "mobileLeftColumn": 59,
+  "mobileRightColumn": 63,
+  "mobileTopRow": 0,
+  "onClick": "{{app.expandContainer1 = app.expandContainer1 ? false : true}}",
+  "parentColumnSpace": 13.796875,
+  "parentId": "7p2ic7vhtn",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 63,
+  "searchTags": [
+    "click",
+    "submit"
+  ],
+  "tags": [
+    "Buttons"
+  ],
+  "topRow": 0,
+  "type": "ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "vj5c7fwmpc",
+  "widgetName": "IconButton1"
 }

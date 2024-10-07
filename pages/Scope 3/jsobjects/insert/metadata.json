@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "65de9a4a0b3d847cf544785f_65e026ac08f7f60e4bc3c09f",
+  "id": "Scope 3_insert",
   "unpublishedCollection": {
     "name": "insert",
     "pageId": "Scope 3",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Scope 3_insert",
-  "deleted": false,
-  "gitSyncId": "65de9a4a0b3d847cf544785f_65e026ac08f7f60e4bc3c09f"
+    "variables": []
+  }
 }

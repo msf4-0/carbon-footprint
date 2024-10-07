@@ -1,72 +1,88 @@
 {
-    "boxShadow": "none",
-    "iconSVG": "/static/media/icon.f2c34197dbcf03595098986de898928f.svg",
-    "topRow": 16,
-    "labelWidth": 5,
-    "type": "INPUT_WIDGET_V2",
-    "animateLoading": true,
-    "resetOnSubmit": true,
-    "leftColumn": 29,
-    "dynamicBindingPathList": [
-        {"key": "accentColor"},
-        {"key": "borderRadius"},
-        {"key": "validation"},
-        {"key": "isDisabled"}
-    ],
-    "labelStyle": "",
-    "inputType": "NUMBER",
-    "isDisabled": "{{app.visible_dist2}}",
-    "validation": "{{Input3Copy.text > 0}}",
-    "isRequired": true,
-    "dynamicHeight": "FIXED",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "showStepArrows": false,
-    "isVisible": true,
-    "version": 2,
-    "tags": [
-        "Suggested",
-        "Inputs"
-    ],
-    "isLoading": false,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 24,
-    "mobileBottomRow": 30,
-    "widgetName": "Input3Copy",
-    "dynamicPropertyPathList": [{"key": "isDisabled"}],
-    "displayName": "Input",
-    "searchTags": [
-        "form",
-        "text input",
-        "number",
-        "textarea"
-    ],
-    "bottomRow": 23,
-    "parentRowSpace": 10,
-    "autoFocus": false,
-    "hideCard": false,
-    "mobileRightColumn": 33,
-    "parentColumnSpace": 8.21875,
-    "dynamicTriggerPathList": [{"key": "onTextChanged"}],
-    "labelPosition": "Top",
-    "key": "o1sb84tfs4",
-    "labelTextSize": "0.875rem",
-    "onTextChanged": "{{app.visible();}}",
-    "isDeprecated": false,
-    "rightColumn": 41,
-    "widgetId": "az45zosjhk",
-    "errorMessage": "Not a valid value!",
-    "minWidth": 450,
-    "label": "Distance Travelled",
-    "parentId": "myokxll2tk",
-    "labelAlignment": "left",
-    "renderMode": "CANVAS",
-    "mobileTopRow": 23,
-    "responsiveBehavior": "fill",
-    "originalTopRow": 17,
-    "mobileLeftColumn": 13,
-    "maxDynamicHeight": 9000,
-    "shouldAllowAutofill": false,
-    "iconAlign": "left",
-    "defaultText": "",
-    "minDynamicHeight": 4
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "autoFocus": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 23,
+  "boxShadow": "none",
+  "defaultText": "",
+  "displayName": "Input",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "validation"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onTextChanged"
+    }
+  ],
+  "errorMessage": "Not a valid value!",
+  "hideCard": false,
+  "iconAlign": "left",
+  "iconSVG": "/static/media/icon.f2c34197dbcf03595098986de898928f.svg",
+  "inputType": "NUMBER",
+  "isDeprecated": false,
+  "isDisabled": "{{app.visible_dist2}}",
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": true,
+  "key": "o1sb84tfs4",
+  "label": "Distance Travelled",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 29,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 30,
+  "mobileLeftColumn": 13,
+  "mobileRightColumn": 33,
+  "mobileTopRow": 23,
+  "onTextChanged": "{{app.visible();}}",
+  "originalBottomRow": 24,
+  "originalTopRow": 17,
+  "parentColumnSpace": 8.21875,
+  "parentId": "myokxll2tk",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "resetOnSubmit": true,
+  "responsiveBehavior": "fill",
+  "rightColumn": 41,
+  "searchTags": [
+    "form",
+    "text input",
+    "number",
+    "textarea"
+  ],
+  "shouldAllowAutofill": false,
+  "showStepArrows": false,
+  "tags": [
+    "Suggested",
+    "Inputs"
+  ],
+  "topRow": 16,
+  "type": "INPUT_WIDGET_V2",
+  "validation": "{{Input3Copy.text > 0}}",
+  "version": 2,
+  "widgetId": "az45zosjhk",
+  "widgetName": "Input3Copy"
 }

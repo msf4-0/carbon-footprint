@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "65239c609e2c5d386003eff6_654891ed61698d6e530ac40b",
+  "id": "Dashboard Copy_app",
   "unpublishedCollection": {
     "name": "app",
     "pageId": "Dashboard Copy",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Dashboard Copy_app",
-  "deleted": false,
-  "gitSyncId": "65239c609e2c5d386003eff6_654891ed61698d6e530ac40b"
+    "variables": []
+  }
 }

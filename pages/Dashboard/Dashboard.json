@@ -1,57 +1,32 @@
 {
+  "gitSyncId": "65239c609e2c5d386003eff6_6523c0879e2c5d386003f008",
   "unpublishedPage": {
-    "name": "Dashboard",
-    "slug": "dashboard",
+    "isHidden": false,
     "layouts": [
       {
-        "viewMode": false,
         "dsl": {
-          "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "rightColumn": 1224,
-          "snapColumns": 64,
-          "detachFromLayout": true,
-          "widgetId": "0",
-          "topRow": 0,
           "bottomRow": 990,
-          "containerStyle": "none",
-          "snapRows": 56,
-          "parentRowSpace": 1,
-          "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 88,
+          "containerStyle": "none",
+          "detachFromLayout": true,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
           "minHeight": 580,
           "parentColumnSpace": 1,
-          "dynamicBindingPathList": [],
-          "leftColumn": 0
-        },
-        "layoutOnLoadActions": [
-          [
-            {
-              "id": "Dashboard_app.run",
-              "name": "app.run",
-              "collectionId": "Dashboard_app",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "async () => {\n  try {\n    jsonwebtoken.verify(appsmith.store.token, 'secret');\n  } catch (error) {\n    return showAlert('Session expired. Please re-login', 'warning').then(() => appsmith.mode === \"EDIT\" ? '' : navigateTo('Login Page'));\n  }\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ]
-        ],
-        "layoutOnLoadActionErrors": [],
-        "validOnPageLoadActions": true,
-        "id": "Dashboard",
-        "deleted": false,
-        "policies": [],
-        "userPermissions": []
+          "parentRowSpace": 1,
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "snapRows": 56,
+          "topRow": 0,
+          "type": "CANVAS_WIDGET",
+          "version": 90,
+          "widgetId": "0",
+          "widgetName": "MainContainer"
+        }
       }
     ],
-    "userPermissions": [],
-    "policies": [],
-    "isHidden": false
-  },
-  "deleted": false,
-  "gitSyncId": "65239c609e2c5d386003eff6_6523c0879e2c5d386003f008"
+    "name": "Dashboard",
+    "slug": "dashboard"
+  }
 }

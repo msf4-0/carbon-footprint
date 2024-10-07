@@ -1,63 +1,79 @@
 {
-    "boxShadow": "none",
-    "iconSVG": "/static/media/icon.a7b19dc8b31d68fcff57f1d2c0084a18.svg",
-    "labelText": "Vehicle Types",
-    "topRow": 14,
-    "labelWidth": 5,
-    "type": "SELECT_WIDGET",
-    "serverSideFiltering": false,
-    "defaultOptionValue": "GREEN",
-    "animateLoading": true,
-    "leftColumn": 1,
-    "dynamicBindingPathList": [
-        {"key": "accentColor"},
-        {"key": "borderRadius"},
-        {"key": "sourceData"}
-    ],
-    "placeholderText": "Select option",
-    "isDisabled": false,
-    "isRequired": true,
-    "dynamicHeight": "FIXED",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "isVisible": true,
-    "version": 1,
-    "tags": [
-        "Suggested",
-        "Select"
-    ],
-    "isLoading": false,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 21,
-    "mobileBottomRow": 20,
-    "widgetName": "Select7",
-    "isFilterable": true,
-    "dynamicPropertyPathList": [{"key": "sourceData"}],
-    "displayName": "Select",
-    "searchTags": ["dropdown"],
-    "bottomRow": 21,
-    "parentRowSpace": 10,
-    "hideCard": false,
-    "mobileRightColumn": 21,
-    "parentColumnSpace": 8.21875,
-    "dynamicTriggerPathList": [{"key": "onOptionChange"}],
-    "labelPosition": "Top",
-    "sourceData": "{{app.dropdown_type.data[\"scope1\"]}}",
-    "key": "jefvrj7cwv",
-    "labelTextSize": "0.875rem",
-    "isDeprecated": false,
-    "rightColumn": 26,
-    "widgetId": "ren8fuvelx",
-    "optionValue": "value",
-    "minWidth": 450,
-    "parentId": "vmj7jwuv3q",
-    "labelAlignment": "left",
-    "renderMode": "CANVAS",
-    "mobileTopRow": 13,
-    "optionLabel": "label",
-    "responsiveBehavior": "fill",
-    "originalTopRow": 14,
-    "mobileLeftColumn": 1,
-    "maxDynamicHeight": 9000,
-    "onOptionChange": "{{app.visible();\napp.type_year();}}",
-    "minDynamicHeight": 4
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 21,
+  "boxShadow": "none",
+  "defaultOptionValue": "GREEN",
+  "displayName": "Select",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.a7b19dc8b31d68fcff57f1d2c0084a18.svg",
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": true,
+  "key": "jefvrj7cwv",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Vehicle Types",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 1,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 20,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 21,
+  "mobileTopRow": 13,
+  "onOptionChange": "{{app.visible();\napp.type_year();}}",
+  "optionLabel": "label",
+  "optionValue": "value",
+  "originalBottomRow": 21,
+  "originalTopRow": 14,
+  "parentColumnSpace": 8.21875,
+  "parentId": "vmj7jwuv3q",
+  "parentRowSpace": 10,
+  "placeholderText": "Select option",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 26,
+  "searchTags": [
+    "dropdown"
+  ],
+  "serverSideFiltering": false,
+  "sourceData": "{{app.dropdown_type.data[\"scope1\"]}}",
+  "tags": [
+    "Suggested",
+    "Select"
+  ],
+  "topRow": 14,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "ren8fuvelx",
+  "widgetName": "Select7"
 }

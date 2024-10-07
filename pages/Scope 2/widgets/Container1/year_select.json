@@ -1,60 +1,74 @@
 {
-    "boxShadow": "none",
-    "iconSVG": "/static/media/icon.a7b19dc8b31d68fcff57f1d2c0084a18.svg",
-    "labelText": "Emission Factor Year",
-    "topRow": 6,
-    "labelWidth": 5,
-    "type": "SELECT_WIDGET",
-    "serverSideFiltering": false,
-    "defaultOptionValue": "2023",
-    "animateLoading": true,
-    "leftColumn": 30,
-    "dynamicBindingPathList": [
-        {"key": "accentColor"},
-        {"key": "borderRadius"}
-    ],
-    "placeholderText": "Select option",
-    "isDisabled": false,
-    "isRequired": false,
-    "dynamicHeight": "FIXED",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "isVisible": true,
-    "version": 1,
-    "tags": [
-        "Suggested",
-        "Select"
-    ],
-    "isLoading": false,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "mobileBottomRow": 13,
-    "widgetName": "year_select",
-    "isFilterable": true,
-    "dynamicPropertyPathList": [{"key": "sourceData"}],
-    "displayName": "Select",
-    "searchTags": ["dropdown"],
-    "bottomRow": 13,
-    "parentRowSpace": 10,
-    "hideCard": false,
-    "mobileRightColumn": 50,
-    "parentColumnSpace": 13,
-    "dynamicTriggerPathList": [{"key": "onOptionChange"}],
-    "labelPosition": "Top",
-    "sourceData": "[\n  {\n    \"name\": \"2023\",\n    \"code\": \"2023\"\n  },\n  {\n    \"name\": \"2022\",\n    \"code\": \"2022\"\n  },\n  {\n    \"name\": \"2021\",\n    \"code\": \"2021\"\n  },\n  {\n    \"name\": \"2020\",\n    \"code\": \"2020\"\n  },\n  {\n    \"name\": \"2019\",\n    \"code\": \"2019\"\n  },\n\t{\n    \"name\": \"2018\",\n    \"code\": \"2018\"\n  }\n]",
-    "key": "ruwpbq0git",
-    "labelTextSize": "0.875rem",
-    "isDeprecated": false,
-    "rightColumn": 50,
-    "widgetId": "ttc1dnnkz7",
-    "optionValue": "code",
-    "minWidth": 450,
-    "parentId": "2m4e85s1h2",
-    "labelAlignment": "left",
-    "renderMode": "CANVAS",
-    "mobileTopRow": 6,
-    "optionLabel": "name",
-    "responsiveBehavior": "fill",
-    "mobileLeftColumn": 30,
-    "maxDynamicHeight": 9000,
-    "onOptionChange": "{{app.visible();}}",
-    "minDynamicHeight": 4
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 13,
+  "boxShadow": "none",
+  "defaultOptionValue": "2023",
+  "displayName": "Select",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.a7b19dc8b31d68fcff57f1d2c0084a18.svg",
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "ruwpbq0git",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Emission Factor Year",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 30,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 13,
+  "mobileLeftColumn": 30,
+  "mobileRightColumn": 50,
+  "mobileTopRow": 6,
+  "onOptionChange": "{{app.visible();}}",
+  "optionLabel": "name",
+  "optionValue": "code",
+  "parentColumnSpace": 13,
+  "parentId": "2m4e85s1h2",
+  "parentRowSpace": 10,
+  "placeholderText": "Select option",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 50,
+  "searchTags": [
+    "dropdown"
+  ],
+  "serverSideFiltering": false,
+  "sourceData": "[\n  {\n    \"name\": \"2023\",\n    \"code\": \"2023\"\n  },\n  {\n    \"name\": \"2022\",\n    \"code\": \"2022\"\n  },\n  {\n    \"name\": \"2021\",\n    \"code\": \"2021\"\n  },\n  {\n    \"name\": \"2020\",\n    \"code\": \"2020\"\n  },\n  {\n    \"name\": \"2019\",\n    \"code\": \"2019\"\n  },\n\t{\n    \"name\": \"2018\",\n    \"code\": \"2018\"\n  }\n]",
+  "tags": [
+    "Suggested",
+    "Select"
+  ],
+  "topRow": 6,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "ttc1dnnkz7",
+  "widgetName": "year_select"
 }

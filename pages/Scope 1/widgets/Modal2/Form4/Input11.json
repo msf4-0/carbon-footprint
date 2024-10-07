@@ -1,75 +1,89 @@
 {
-    "boxShadow": "none",
-    "iconSVG": "/static/media/icon.f2c34197dbcf03595098986de898928f.svg",
-    "topRow": 13,
-    "labelWidth": 5,
-    "type": "INPUT_WIDGET_V2",
-    "topRowBeforeCollapse": 13,
-    "animateLoading": true,
-    "resetOnSubmit": true,
-    "leftColumn": 37,
-    "dynamicBindingPathList": [
-        {"key": "accentColor"},
-        {"key": "borderRadius"},
-        {"key": "isRequired"},
-        {"key": "isVisible"},
-        {"key": "defaultText"}
-    ],
-    "labelStyle": "",
-    "inputType": "NUMBER",
-    "isDisabled": true,
-    "isRequired": "{{Switch1.isSwitchedOn}}",
-    "dynamicHeight": "FIXED",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "showStepArrows": false,
-    "bottomRowBeforeCollapse": 20,
-    "isVisible": "{{Switch1.isSwitchedOn}}",
-    "version": 2,
-    "tags": [
-        "Suggested",
-        "Inputs"
-    ],
-    "isLoading": false,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 20,
-    "mobileBottomRow": 20,
-    "widgetName": "Input11",
-    "dynamicPropertyPathList": [
-        {"key": "isRequired"},
-        {"key": "isVisible"}
-    ],
-    "displayName": "Input",
-    "searchTags": [
-        "form",
-        "text input",
-        "number",
-        "textarea"
-    ],
-    "bottomRow": 20,
-    "parentRowSpace": 10,
-    "autoFocus": false,
-    "hideCard": false,
-    "mobileRightColumn": 13,
-    "parentColumnSpace": 11.90625,
-    "dynamicTriggerPathList": [],
-    "labelPosition": "Top",
-    "key": "v6hj4gb9vr",
-    "labelTextSize": "0.875rem",
-    "isDeprecated": false,
-    "rightColumn": 47,
-    "widgetId": "5wpfj1yvl5",
-    "minWidth": 450,
-    "label": "Emission Factor",
-    "parentId": "agltqoudbj",
-    "labelAlignment": "left",
-    "renderMode": "CANVAS",
-    "mobileTopRow": 13,
-    "responsiveBehavior": "fill",
-    "originalTopRow": 13,
-    "mobileLeftColumn": 0,
-    "maxDynamicHeight": 9000,
-    "shouldAllowAutofill": false,
-    "iconAlign": "left",
-    "defaultText": "{{insert.emission2_energy.data}}",
-    "minDynamicHeight": 4
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "autoFocus": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 20,
+  "bottomRowBeforeCollapse": 20,
+  "boxShadow": "none",
+  "defaultText": "{{insert.emission2_energy.data}}",
+  "displayName": "Input",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isRequired"
+    },
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "defaultText"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isRequired"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "hideCard": false,
+  "iconAlign": "left",
+  "iconSVG": "/static/media/icon.f2c34197dbcf03595098986de898928f.svg",
+  "inputType": "NUMBER",
+  "isDeprecated": false,
+  "isDisabled": true,
+  "isLoading": false,
+  "isRequired": "{{Switch1.isSwitchedOn}}",
+  "isVisible": "{{Switch1.isSwitchedOn}}",
+  "key": "v6hj4gb9vr",
+  "label": "Emission Factor",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 37,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 20,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 13,
+  "mobileTopRow": 13,
+  "originalBottomRow": 20,
+  "originalTopRow": 13,
+  "parentColumnSpace": 11.90625,
+  "parentId": "agltqoudbj",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "resetOnSubmit": true,
+  "responsiveBehavior": "fill",
+  "rightColumn": 47,
+  "searchTags": [
+    "form",
+    "text input",
+    "number",
+    "textarea"
+  ],
+  "shouldAllowAutofill": false,
+  "showStepArrows": false,
+  "tags": [
+    "Suggested",
+    "Inputs"
+  ],
+  "topRow": 13,
+  "topRowBeforeCollapse": 13,
+  "type": "INPUT_WIDGET_V2",
+  "version": 2,
+  "widgetId": "5wpfj1yvl5",
+  "widgetName": "Input11"
 }

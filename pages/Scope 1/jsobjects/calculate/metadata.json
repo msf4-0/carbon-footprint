@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "65de094d3a6f5f23a8f1784f_65de095c3a6f5f23a8f1793f",
+  "id": "Scope 1_calculate",
   "unpublishedCollection": {
     "name": "calculate",
     "pageId": "Scope 1",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Scope 1_calculate",
-  "deleted": false,
-  "gitSyncId": "65de094d3a6f5f23a8f1784f_65de095c3a6f5f23a8f1793f"
+    "variables": []
+  }
 }

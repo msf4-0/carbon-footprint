@@ -1,73 +1,85 @@
 {
-    "boxShadow": "none",
-    "iconSVG": "/static/media/icon.f2c34197dbcf03595098986de898928f.svg",
-    "topRow": 16,
-    "labelWidth": 5,
-    "type": "INPUT_WIDGET_V2",
-    "topRowBeforeCollapse": 16,
-    "animateLoading": true,
-    "resetOnSubmit": true,
-    "leftColumn": 42,
-    "dynamicBindingPathList": [
-        {"key": "accentColor"},
-        {"key": "borderRadius"},
-        {"key": "isVisible"},
-        {"key": "isRequired"}
-    ],
-    "labelStyle": "",
-    "inputType": "TEXT",
-    "isDisabled": false,
-    "isRequired": "{{app3.weight_required}}",
-    "dynamicHeight": "FIXED",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "showStepArrows": false,
-    "bottomRowBeforeCollapse": 23,
-    "isVisible": "{{Checkbox3.isChecked}}",
-    "version": 2,
-    "tags": [
-        "Suggested",
-        "Inputs"
-    ],
-    "isLoading": false,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 23,
-    "mobileBottomRow": 16,
-    "widgetName": "Input6",
-    "dynamicPropertyPathList": [
-        {"key": "isVisible"},
-        {"key": "isRequired"}
-    ],
-    "displayName": "Input",
-    "searchTags": [
-        "form",
-        "text input",
-        "number",
-        "textarea"
-    ],
-    "bottomRow": 23,
-    "parentRowSpace": 10,
-    "autoFocus": false,
-    "hideCard": false,
-    "mobileRightColumn": 63,
-    "parentColumnSpace": 8.21875,
-    "dynamicTriggerPathList": [],
-    "labelPosition": "Top",
-    "key": "gnuqacgnoy",
-    "labelTextSize": "0.875rem",
-    "isDeprecated": false,
-    "rightColumn": 55,
-    "widgetId": "ojf5ra75ua",
-    "minWidth": 450,
-    "label": "Weight (in tonnes)",
-    "parentId": "myokxll2tk",
-    "labelAlignment": "left",
-    "renderMode": "CANVAS",
-    "mobileTopRow": 9,
-    "responsiveBehavior": "fill",
-    "originalTopRow": 16,
-    "mobileLeftColumn": 43,
-    "maxDynamicHeight": 9000,
-    "iconAlign": "left",
-    "defaultText": "",
-    "minDynamicHeight": 4
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "autoFocus": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 23,
+  "bottomRowBeforeCollapse": 23,
+  "boxShadow": "none",
+  "defaultText": "",
+  "displayName": "Input",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "isRequired"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "isRequired"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "hideCard": false,
+  "iconAlign": "left",
+  "iconSVG": "/static/media/icon.f2c34197dbcf03595098986de898928f.svg",
+  "inputType": "TEXT",
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": "{{app3.weight_required}}",
+  "isVisible": "{{Checkbox3.isChecked}}",
+  "key": "gnuqacgnoy",
+  "label": "Weight (in tonnes)",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 42,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 16,
+  "mobileLeftColumn": 43,
+  "mobileRightColumn": 63,
+  "mobileTopRow": 9,
+  "originalBottomRow": 23,
+  "originalTopRow": 16,
+  "parentColumnSpace": 8.21875,
+  "parentId": "myokxll2tk",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "resetOnSubmit": true,
+  "responsiveBehavior": "fill",
+  "rightColumn": 55,
+  "searchTags": [
+    "form",
+    "text input",
+    "number",
+    "textarea"
+  ],
+  "showStepArrows": false,
+  "tags": [
+    "Suggested",
+    "Inputs"
+  ],
+  "topRow": 16,
+  "topRowBeforeCollapse": 16,
+  "type": "INPUT_WIDGET_V2",
+  "version": 2,
+  "widgetId": "ojf5ra75ua",
+  "widgetName": "Input6"
 }

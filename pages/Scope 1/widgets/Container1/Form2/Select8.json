@@ -1,69 +1,87 @@
 {
-    "boxShadow": "none",
-    "iconSVG": "/static/media/icon.a7b19dc8b31d68fcff57f1d2c0084a18.svg",
-    "labelText": "Year",
-    "topRow": 14,
-    "labelWidth": 5,
-    "type": "SELECT_WIDGET",
-    "serverSideFiltering": false,
-    "topRowBeforeCollapse": 14,
-    "defaultOptionValue": "GREEN",
-    "animateLoading": true,
-    "leftColumn": 27,
-    "dynamicBindingPathList": [
-        {"key": "accentColor"},
-        {"key": "borderRadius"},
-        {"key": "sourceData"},
-        {"key": "isDisabled"}
-    ],
-    "placeholderText": "Select option",
-    "isDisabled": "{{app.visible_year}}",
-    "isRequired": true,
-    "dynamicHeight": "FIXED",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "bottomRowBeforeCollapse": 21,
-    "isVisible": true,
-    "version": 1,
-    "tags": [
-        "Suggested",
-        "Select"
-    ],
-    "isLoading": false,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 21,
-    "mobileBottomRow": 20,
-    "widgetName": "Select8",
-    "isFilterable": true,
-    "dynamicPropertyPathList": [
-        {"key": "sourceData"},
-        {"key": "isDisabled"}
-    ],
-    "displayName": "Select",
-    "searchTags": ["dropdown"],
-    "bottomRow": 21,
-    "parentRowSpace": 10,
-    "hideCard": false,
-    "mobileRightColumn": 52,
-    "parentColumnSpace": 8.21875,
-    "dynamicTriggerPathList": [{"key": "onOptionChange"}],
-    "labelPosition": "Top",
-    "sourceData": "{{app.type_year.data[\"scope1\"]}}",
-    "key": "jefvrj7cwv",
-    "labelTextSize": "0.875rem",
-    "isDeprecated": false,
-    "rightColumn": 38,
-    "widgetId": "9398tjf2it",
-    "optionValue": "value",
-    "minWidth": 450,
-    "parentId": "vmj7jwuv3q",
-    "labelAlignment": "left",
-    "renderMode": "CANVAS",
-    "mobileTopRow": 13,
-    "optionLabel": "label",
-    "responsiveBehavior": "fill",
-    "originalTopRow": 14,
-    "mobileLeftColumn": 32,
-    "maxDynamicHeight": 9000,
-    "onOptionChange": "{{app.type_unit();}}",
-    "minDynamicHeight": 4
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 21,
+  "bottomRowBeforeCollapse": 21,
+  "boxShadow": "none",
+  "defaultOptionValue": "GREEN",
+  "displayName": "Select",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.a7b19dc8b31d68fcff57f1d2c0084a18.svg",
+  "isDeprecated": false,
+  "isDisabled": "{{app.visible_year}}",
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": true,
+  "key": "jefvrj7cwv",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Year",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 27,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 20,
+  "mobileLeftColumn": 32,
+  "mobileRightColumn": 52,
+  "mobileTopRow": 13,
+  "onOptionChange": "{{app.type_unit();}}",
+  "optionLabel": "label",
+  "optionValue": "value",
+  "originalBottomRow": 21,
+  "originalTopRow": 14,
+  "parentColumnSpace": 8.21875,
+  "parentId": "vmj7jwuv3q",
+  "parentRowSpace": 10,
+  "placeholderText": "Select option",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 38,
+  "searchTags": [
+    "dropdown"
+  ],
+  "serverSideFiltering": false,
+  "sourceData": "{{app.type_year.data[\"scope1\"]}}",
+  "tags": [
+    "Suggested",
+    "Select"
+  ],
+  "topRow": 14,
+  "topRowBeforeCollapse": 14,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "9398tjf2it",
+  "widgetName": "Select8"
 }

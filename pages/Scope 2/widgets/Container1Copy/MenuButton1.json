@@ -1,109 +1,127 @@
 {
-    "isCompact": false,
-    "boxShadow": "none",
-    "mobileBottomRow": 37,
-    "widgetName": "MenuButton1",
-    "displayName": "Menu button",
-    "iconSVG": "/static/media/icon.631848e88e7a3db05f6015f22835e81b.svg",
-    "topRow": 1,
-    "bottomRow": 6,
-    "parentRowSpace": 10,
-    "type": "MENU_BUTTON_WIDGET",
-    "hideCard": false,
-    "mobileRightColumn": 47,
-    "animateLoading": true,
-    "parentColumnSpace": 14.109375,
-    "dynamicTriggerPathList": [
-        {"key": "menuItems.menuItem1.onClick"},
-        {"key": "menuItems.menuItemtybz479ymc.onClick"},
-        {"key": "menuItems.menuItemx5qjkyqapn.onClick"},
-        {"key": "menuItems.menuItem16fpp3jg3l.onClick"},
-        {"key": "menuItems.menuItem993m3sceov.onClick"},
-        {"key": "menuItems.menuItemfnbl9f7jwz.onClick"}
-    ],
-    "leftColumn": 58,
-    "dynamicBindingPathList": [{"key": "borderRadius"}],
-    "isDisabled": false,
-    "key": "23v60iq2gy",
-    "isDeprecated": false,
-    "rightColumn": 63,
-    "iconName": "person",
-    "menuVariant": "TERTIARY",
-    "widgetId": "39p1rl9h7e",
-    "menuItems": {
-        "menuItemfnbl9f7jwz": {
-            "onClick": "{{navigateTo('Scope 3', {}, 'SAME_WINDOW');}}",
-            "iconName": "calculator",
-            "widgetId": "agsj7mjvvg",
-            "index": 3,
-            "id": "menuItemfnbl9f7jwz",
-            "label": "Scope 3",
-            "isDisabled": false,
-            "isVisible": true
-        },
-        "menuItem16fpp3jg3l": {
-            "onClick": "{{navigateTo('Consumption Entry', {}, 'SAME_WINDOW');}}",
-            "iconName": "add",
-            "widgetId": "uvql0tgsjd",
-            "index": 5,
-            "id": "menuItem16fpp3jg3l",
-            "label": "Consumption Entry",
-            "isDisabled": false,
-            "isVisible": true
-        },
-        "menuItemx5qjkyqapn": {
-            "onClick": "{{navigateTo('Scope 1', {}, 'SAME_WINDOW');}}",
-            "iconName": "calculator",
-            "widgetId": "b5osyqpxii",
-            "index": 2,
-            "id": "menuItemx5qjkyqapn",
-            "label": "Scope 1",
-            "isDisabled": false,
-            "isVisible": true
-        },
-        "menuItem1": {
-            "onClick": "{{navigateTo('Settings', {}, 'SAME_WINDOW');}}",
-            "iconName": "settings",
-            "widgetId": "",
-            "index": 0,
-            "label": "Account Settings",
-            "id": "menuItem1",
-            "isVisible": true,
-            "isDisabled": false
-        },
-        "menuItem993m3sceov": {
-            "onClick": "{{navigateTo('Dashboard', {}, 'SAME_WINDOW');}}",
-            "iconName": "chart",
-            "widgetId": "lqfbpeuvld",
-            "index": 1,
-            "id": "menuItem993m3sceov",
-            "label": "Dashboard",
-            "isDisabled": false,
-            "isVisible": true
-        },
-        "menuItemtybz479ymc": {
-            "onClick": "{{navigateTo('Database', {}, 'SAME_WINDOW');}}",
-            "iconName": "database",
-            "widgetId": "wgw9gmjyrn",
-            "index": 4,
-            "id": "menuItemtybz479ymc",
-            "label": "Database",
-            "isDisabled": false,
-            "isVisible": true
-        }
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 6,
+  "boxShadow": "none",
+  "displayName": "Menu button",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "menuItems.menuItem1.onClick"
     },
-    "isVisible": true,
-    "label": "",
-    "version": 1,
-    "parentId": "xxu0gy3m8q",
-    "tags": ["Buttons"],
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "mobileTopRow": 33,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "mobileLeftColumn": 31,
-    "menuItemsSource": "STATIC",
-    "menuColor": "#231f20",
-    "iconAlign": "left",
-    "placement": "CENTER"
+    {
+      "key": "menuItems.menuItemtybz479ymc.onClick"
+    },
+    {
+      "key": "menuItems.menuItemx5qjkyqapn.onClick"
+    },
+    {
+      "key": "menuItems.menuItem16fpp3jg3l.onClick"
+    },
+    {
+      "key": "menuItems.menuItem993m3sceov.onClick"
+    },
+    {
+      "key": "menuItems.menuItemfnbl9f7jwz.onClick"
+    }
+  ],
+  "hideCard": false,
+  "iconAlign": "left",
+  "iconName": "person",
+  "iconSVG": "/static/media/icon.631848e88e7a3db05f6015f22835e81b.svg",
+  "isCompact": false,
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "23v60iq2gy",
+  "label": "",
+  "leftColumn": 58,
+  "menuColor": "#231f20",
+  "menuItems": {
+    "menuItem1": {
+      "iconName": "settings",
+      "id": "menuItem1",
+      "index": 0,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Account Settings",
+      "onClick": "{{navigateTo('Settings', {}, 'SAME_WINDOW');}}",
+      "widgetId": ""
+    },
+    "menuItem16fpp3jg3l": {
+      "iconName": "add",
+      "id": "menuItem16fpp3jg3l",
+      "index": 5,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Consumption Entry",
+      "onClick": "{{navigateTo('Consumption Entry', {}, 'SAME_WINDOW');}}",
+      "widgetId": "uvql0tgsjd"
+    },
+    "menuItem993m3sceov": {
+      "iconName": "chart",
+      "id": "menuItem993m3sceov",
+      "index": 1,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Dashboard",
+      "onClick": "{{navigateTo('Dashboard', {}, 'SAME_WINDOW');}}",
+      "widgetId": "lqfbpeuvld"
+    },
+    "menuItemfnbl9f7jwz": {
+      "iconName": "calculator",
+      "id": "menuItemfnbl9f7jwz",
+      "index": 3,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Scope 3",
+      "onClick": "{{navigateTo('Scope 3', {}, 'SAME_WINDOW');}}",
+      "widgetId": "agsj7mjvvg"
+    },
+    "menuItemtybz479ymc": {
+      "iconName": "database",
+      "id": "menuItemtybz479ymc",
+      "index": 4,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Database",
+      "onClick": "{{navigateTo('Database', {}, 'SAME_WINDOW');}}",
+      "widgetId": "wgw9gmjyrn"
+    },
+    "menuItemx5qjkyqapn": {
+      "iconName": "calculator",
+      "id": "menuItemx5qjkyqapn",
+      "index": 2,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Scope 1",
+      "onClick": "{{navigateTo('Scope 1', {}, 'SAME_WINDOW');}}",
+      "widgetId": "b5osyqpxii"
+    }
+  },
+  "menuItemsSource": "STATIC",
+  "menuVariant": "TERTIARY",
+  "mobileBottomRow": 37,
+  "mobileLeftColumn": 31,
+  "mobileRightColumn": 47,
+  "mobileTopRow": 33,
+  "parentColumnSpace": 14.109375,
+  "parentId": "xxu0gy3m8q",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "renderMode": "CANVAS",
+  "rightColumn": 63,
+  "tags": [
+    "Buttons"
+  ],
+  "topRow": 1,
+  "type": "MENU_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "39p1rl9h7e",
+  "widgetName": "MenuButton1"
 }

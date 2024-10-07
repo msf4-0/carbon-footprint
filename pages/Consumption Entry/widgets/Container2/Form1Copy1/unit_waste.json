@@ -1,69 +1,91 @@
 {
-    "boxShadow": "none",
-    "iconSVG": "/static/media/icon.a7b19dc8b31d68fcff57f1d2c0084a18.svg",
-    "labelText": " ",
-    "topRow": 15,
-    "labelWidth": "5",
-    "type": "SELECT_WIDGET",
-    "serverSideFiltering": false,
-    "defaultOptionValue": "",
-    "animateLoading": true,
-    "leftColumn": 22,
-    "dynamicBindingPathList": [
-        {"key": "accentColor"},
-        {"key": "borderRadius"},
-        {"key": "sourceData"},
-        {"key": "isDisabled"}
-    ],
-    "placeholderText": "Select your unit",
-    "isDisabled": "{{app.disable2.data}}",
-    "isRequired": true,
-    "dynamicHeight": "FIXED",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "isVisible": true,
-    "version": 1,
-    "tags": [
-        "Suggested",
-        "Select"
-    ],
-    "isLoading": false,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 22,
-    "mobileBottomRow": 20,
-    "widgetName": "unit_waste",
-    "isFilterable": false,
-    "dynamicPropertyPathList": [
-        {"key": "sourceData"},
-        {"key": "isDisabled"},
-        {"key": "optionLabel"},
-        {"key": "optionValue"}
-    ],
-    "displayName": "Select",
-    "searchTags": ["dropdown"],
-    "bottomRow": 20,
-    "parentRowSpace": 10,
-    "hideCard": false,
-    "mobileRightColumn": 43,
-    "parentColumnSpace": 13.46875,
-    "dynamicTriggerPathList": [{"key": "onOptionChange"}],
-    "labelPosition": "Top",
-    "sourceData": "{{app.unit2.data}}",
-    "key": "au0klboagb",
-    "labelTextSize": "0.875rem",
-    "isDeprecated": false,
-    "rightColumn": 33,
-    "widgetId": "8tqph53h7o",
-    "optionValue": "value",
-    "minWidth": 450,
-    "parentId": "cx1ijtwgn5",
-    "labelAlignment": "left",
-    "renderMode": "CANVAS",
-    "mobileTopRow": 13,
-    "optionLabel": "label",
-    "responsiveBehavior": "fill",
-    "originalTopRow": 15,
-    "mobileLeftColumn": 23,
-    "maxDynamicHeight": 9000,
-    "onOptionChange": "{{app.unit_waste();}}",
-    "minDynamicHeight": 4
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 20,
+  "boxShadow": "none",
+  "defaultOptionValue": "",
+  "displayName": "Select",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "isDisabled"
+    },
+    {
+      "key": "optionLabel"
+    },
+    {
+      "key": "optionValue"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.a7b19dc8b31d68fcff57f1d2c0084a18.svg",
+  "isDeprecated": false,
+  "isDisabled": "{{app.disable2.data}}",
+  "isFilterable": false,
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": true,
+  "key": "au0klboagb",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": " ",
+  "labelTextSize": "0.875rem",
+  "labelWidth": "5",
+  "leftColumn": 22,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 20,
+  "mobileLeftColumn": 23,
+  "mobileRightColumn": 43,
+  "mobileTopRow": 13,
+  "onOptionChange": "{{app.unit_waste();}}",
+  "optionLabel": "label",
+  "optionValue": "value",
+  "originalBottomRow": 22,
+  "originalTopRow": 15,
+  "parentColumnSpace": 13.46875,
+  "parentId": "cx1ijtwgn5",
+  "parentRowSpace": 10,
+  "placeholderText": "Select your unit",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 33,
+  "searchTags": [
+    "dropdown"
+  ],
+  "serverSideFiltering": false,
+  "sourceData": "{{app.unit2.data}}",
+  "tags": [
+    "Suggested",
+    "Select"
+  ],
+  "topRow": 15,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "8tqph53h7o",
+  "widgetName": "unit_waste"
 }

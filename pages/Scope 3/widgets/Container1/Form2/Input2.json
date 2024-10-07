@@ -1,75 +1,91 @@
 {
-    "boxShadow": "none",
-    "iconSVG": "/static/media/icon.f2c34197dbcf03595098986de898928f.svg",
-    "topRow": 8,
-    "labelWidth": 5,
-    "type": "INPUT_WIDGET_V2",
-    "topRowBeforeCollapse": 8,
-    "animateLoading": true,
-    "resetOnSubmit": true,
-    "leftColumn": 27,
-    "dynamicBindingPathList": [
-        {"key": "accentColor"},
-        {"key": "borderRadius"},
-        {"key": "isVisible"},
-        {"key": "isRequired"}
-    ],
-    "labelStyle": "",
-    "inputType": "NUMBER",
-    "isDisabled": false,
-    "isRequired": "{{app2.fuel_required}}",
-    "dynamicHeight": "FIXED",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "showStepArrows": false,
-    "bottomRowBeforeCollapse": 15,
-    "isVisible": "{{Checkbox1.isChecked}}",
-    "version": 2,
-    "tags": [
-        "Suggested",
-        "Inputs"
-    ],
-    "isLoading": false,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 15,
-    "mobileBottomRow": 13,
-    "widgetName": "Input2",
-    "dynamicPropertyPathList": [
-        {"key": "isVisible"},
-        {"key": "isRequired"}
-    ],
-    "displayName": "Input",
-    "searchTags": [
-        "form",
-        "text input",
-        "number",
-        "textarea"
-    ],
-    "bottomRow": 15,
-    "parentRowSpace": 10,
-    "autoFocus": false,
-    "hideCard": false,
-    "mobileRightColumn": 52,
-    "parentColumnSpace": 8.21875,
-    "dynamicTriggerPathList": [{"key": "onTextChanged"}],
-    "labelPosition": "Top",
-    "key": "o1sb84tfs4",
-    "labelTextSize": "0.875rem",
-    "onTextChanged": "{{app.visible();}}",
-    "isDeprecated": false,
-    "rightColumn": 38,
-    "widgetId": "rczfybvjpw",
-    "minWidth": 450,
-    "label": "Fuel Input",
-    "parentId": "xt5th4k2hi",
-    "labelAlignment": "left",
-    "renderMode": "CANVAS",
-    "mobileTopRow": 6,
-    "responsiveBehavior": "fill",
-    "originalTopRow": 8,
-    "mobileLeftColumn": 32,
-    "maxDynamicHeight": 9000,
-    "shouldAllowAutofill": false,
-    "iconAlign": "left",
-    "defaultText": "",
-    "minDynamicHeight": 4
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "autoFocus": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 15,
+  "bottomRowBeforeCollapse": 15,
+  "boxShadow": "none",
+  "defaultText": "",
+  "displayName": "Input",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "isRequired"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "isRequired"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onTextChanged"
+    }
+  ],
+  "hideCard": false,
+  "iconAlign": "left",
+  "iconSVG": "/static/media/icon.f2c34197dbcf03595098986de898928f.svg",
+  "inputType": "NUMBER",
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": "{{app2.fuel_required}}",
+  "isVisible": "{{Checkbox1.isChecked}}",
+  "key": "o1sb84tfs4",
+  "label": "Fuel Input",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 27,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 13,
+  "mobileLeftColumn": 32,
+  "mobileRightColumn": 52,
+  "mobileTopRow": 6,
+  "onTextChanged": "{{app.visible();}}",
+  "originalBottomRow": 15,
+  "originalTopRow": 8,
+  "parentColumnSpace": 8.21875,
+  "parentId": "xt5th4k2hi",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "resetOnSubmit": true,
+  "responsiveBehavior": "fill",
+  "rightColumn": 38,
+  "searchTags": [
+    "form",
+    "text input",
+    "number",
+    "textarea"
+  ],
+  "shouldAllowAutofill": false,
+  "showStepArrows": false,
+  "tags": [
+    "Suggested",
+    "Inputs"
+  ],
+  "topRow": 8,
+  "topRowBeforeCollapse": 8,
+  "type": "INPUT_WIDGET_V2",
+  "version": 2,
+  "widgetId": "rczfybvjpw",
+  "widgetName": "Input2"
 }

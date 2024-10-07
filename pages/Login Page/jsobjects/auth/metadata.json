@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "65239c609e2c5d386003eff6_65275efb1283bf36c82cf753",
+  "id": "Login Page_auth",
   "unpublishedCollection": {
     "name": "auth",
     "pageId": "Login Page",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Login Page_auth",
-  "deleted": false,
-  "gitSyncId": "65239c609e2c5d386003eff6_65275efb1283bf36c82cf753"
+    "variables": []
+  }
 }

@@ -1,49 +1,61 @@
 {
-    "mobileBottomRow": 78,
-    "widgetName": "Checkbox2",
-    "displayName": "Checkbox",
-    "iconSVG": "/static/media/icon.7b004ee098ca948e952234e7baec6d11.svg",
-    "searchTags": ["boolean"],
-    "topRow": 0,
-    "bottomRow": 4,
-    "parentRowSpace": 10,
-    "type": "CHECKBOX_WIDGET",
-    "alignWidget": "RIGHT",
-    "hideCard": false,
-    "mobileRightColumn": 60,
-    "animateLoading": true,
-    "parentColumnSpace": 13,
-    "dynamicTriggerPathList": [{"key": "onCheckChange"}],
-    "leftColumn": 44,
-    "dynamicBindingPathList": [
-        {"key": "accentColor"},
-        {"key": "borderRadius"}
-    ],
-    "labelPosition": "Left",
-    "onCheckChange": "{{app3.fuel_unit();\napp3.required();}}",
-    "isDisabled": false,
-    "key": "ngafa6tuqm",
-    "isRequired": false,
-    "isDeprecated": false,
-    "rightColumn": 64,
-    "dynamicHeight": "AUTO_HEIGHT",
-    "widgetId": "kcrdr5xum0",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "minWidth": 450,
-    "isVisible": true,
-    "label": "Enable Fuel Option",
-    "version": 1,
-    "parentId": "myokxll2tk",
-    "tags": ["Toggles"],
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "mobileTopRow": 74,
-    "responsiveBehavior": "fill",
-    "originalTopRow": 0,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "mobileLeftColumn": 48,
-    "defaultCheckedState": false,
-    "maxDynamicHeight": 9000,
-    "originalBottomRow": 5,
-    "minDynamicHeight": 4
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "alignWidget": "RIGHT",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 4,
+  "defaultCheckedState": false,
+  "displayName": "Checkbox",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicTriggerPathList": [
+    {
+      "key": "onCheckChange"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.7b004ee098ca948e952234e7baec6d11.svg",
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "ngafa6tuqm",
+  "label": "Enable Fuel Option",
+  "labelPosition": "Left",
+  "leftColumn": 44,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 78,
+  "mobileLeftColumn": 48,
+  "mobileRightColumn": 60,
+  "mobileTopRow": 74,
+  "onCheckChange": "{{app3.fuel_unit();\napp3.required();}}",
+  "originalBottomRow": 5,
+  "originalTopRow": 0,
+  "parentColumnSpace": 13,
+  "parentId": "myokxll2tk",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "searchTags": [
+    "boolean"
+  ],
+  "tags": [
+    "Toggles"
+  ],
+  "topRow": 0,
+  "type": "CHECKBOX_WIDGET",
+  "version": 1,
+  "widgetId": "kcrdr5xum0",
+  "widgetName": "Checkbox2"
 }
